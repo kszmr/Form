@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charsef="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1 id="title">Contact us</h1>
+            <p id="description">We'll be glad to help you</p>
+        </div>
+        <div class="style-form">
+        <main class="main-style">
+            <form id="survey-form" name="contact">
+                <section>
+                    <label for="name" id="name-label" class="sctone">Name</label>
+                    <input type="text" id="name" class="sctone"  name="name" value="" placeholder="Your name" required>
+                    <label for="email" id="email-label" class="sctone">E-mail</label>
+                    <input type="email" id="email" class="sctone" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value="" placeholder="your@email.com" required>
+                    <label for="age" id="number-label" class="sctone">Age</label>
+                    <input type="number" min="10" max="99" id="number" class="sctone" name="age" value="" placeholder="Age" required>
+                    <label for="adress" id="adress-label" class="sctone">Address</label>
+                    <input type="text" id="address" class="sctone" name="address" value="" placeholder="1958 5th Ave" required>
+                </section>
+                    
+                <section>
+                    <p class=>How did you find us?</p>
+                    <label for="facebook" class="container">
+                    <input type="checkbox" id="facebook" class="check" name="facebook" value="facebook">Facebook</label>
+                    <span class="checkmark"></span><br>
+
+                    <label for="Instagram" class="container">
+                    <input type="checkbox" id="instagram" class="check" name="instagram" value="instagram">Instagram</label>
+                    <span class="checkmark"></span><br>
+
+                    <label for="google" class="container">
+                    <input type="checkbox" id="google" class="check" name="google" value="Google">Google</label>
+                    <span class="checkmark"></span><br>
+
+                    <label for="friend" class="container">
+                    <input type="checkbox" id="friend" class="check" name="friend" value="friend">Friend Recommendation</label>
+                    <span class="checkmark"></span><br>
+                </section>
+
+                <section>
+                    <p class="lbl">Would you recommend our services to a friend?</p>
+                    <input type="radio" id="yes" name="recommend" value="yes">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="recommend" value="no">
+                    <label for="maybe">No</label><br>
+                    <input type="radio" id="maybe" name="recommend" value="maybe">
+                    <label for="maybe">Maybe</label>
+                </section>
+
+                <section>
+                    <div class="select-custom">
+                    <label for="reason-contact" class="sctone">What's the reason of your contact?</label>
+                    <select id="dropdown" class="dropdown" name="msg" required>
+                                <option class="disabled" disabled selected hidden value>Select a reason</option>
+                                <option value="comment">A comment</option>
+                                <option value="suggestion">A suggestion</option>
+                                <option value="complaint">A complaint</option>
+                                <option value="other">Other</option>
+                    </select>
+                    </div>
+                </section>
+
+                <section>
+                    <label for="name" class="sctone" >Write your comment</label>
+                    <textarea id="comment-text" class="txtarea" name="comment-text"
+                            rows="5" cols="47" placeholder="Enter your comment here"></textarea>
+                </section>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+         </main>
+        </div>
+    </body>
+</html>
